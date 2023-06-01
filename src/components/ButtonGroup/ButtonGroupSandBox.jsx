@@ -1,19 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ButtonGroup from "./ButtonGroup";
 import Button from "../Button/Button";
 
 const ButtonGroupSandbox = () => {
-  const [switchOn, setSwitchOn] = useState(true);
-
-  const handleSwitch = (e) => {
-    setSwitchOn((prevState) => {
-      if (e.target.classList.contains("active")) {
-        return prevState;
-      }
-      return !prevState;
-    });
-  };
-
   return (
     <>
       <h2>
@@ -38,12 +27,8 @@ const ButtonGroupSandbox = () => {
         <span>3. Switcher button group:</span>
       </h2>
       <ButtonGroup>
-        <Button onClick={handleSwitch} active={switchOn}>
-          ON
-        </Button>
-        <Button onClick={handleSwitch} active={!switchOn}>
-          OFF
-        </Button>
+        <Button active>ON</Button>
+        <Button>OFF</Button>
       </ButtonGroup>
     </>
   );
