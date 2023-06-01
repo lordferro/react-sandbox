@@ -7,18 +7,18 @@ import "./ButtonGroup.css";
 const ButtonGroup = ({ children, className, vertical, ...attrs }) => {
   const classes = classNames("btn-group", className, { vertical });
 
- const handleActive = (e) => {
-   e.preventDefault();
-   const buttons = Array.from(e.target.parentElement.children);
+  const handleActive = (e) => {
+    e.preventDefault();
+    const buttons = Array.from(e.target.parentElement.children);
 
-   buttons.map((button) => {
-     if (button.classList.contains("active")) {
-       button.classList.remove("active");
-     }
-   });
-   e.target.classList.add("active");
- };
-
+    // eslint-disable-next-line array-callback-return
+    buttons.map((button) => {
+      if (button.classList.contains("active")) {
+        button.classList.remove("active");
+      }
+    });
+    e.target.classList.add("active");
+  };
 
   return (
     <div onClick={handleActive} className={classes} {...attrs}>
