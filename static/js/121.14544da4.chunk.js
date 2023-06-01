@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_sandbox=self.webpackChunkreact_sandbox||[]).push([[121],{121:function(e,n,t){t.r(n);var a=t(184);n.default=function(){return(0,a.jsx)("p",{style:{paddingLeft:15},children:"Sandbox for React components"})}}}]);
+//# sourceMappingURL=121.14544da4.chunk.js.map
