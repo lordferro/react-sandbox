@@ -1,12 +1,15 @@
-import {  Route, Routes } from "react-router-dom";
+import React from "react";
+import { lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
 import "./App.css";
-import { Layout } from "./components/Layout/Layout";
-import { Home } from "./components/Home";
+import IconSandBox from "./components/Icon/IconSandBox";
 
-import ButtonSandbox from "./components/Button/ButtonSandbox";
-import ButtonGroupSandbox from "./components/ButtonGroup/ButtonGroupSandBox";
-
-
+const Home = lazy(() => import("./components/Home"));
+const ButtonSandbox = lazy(() => import("./components/Button/ButtonSandbox"));
+const ButtonGroupSandbox = lazy(() =>
+  import("./components/ButtonGroup/ButtonGroupSandBox")
+);
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="button" element={<ButtonSandbox />} />
         <Route path="button-group" element={<ButtonGroupSandbox />} />
+        <Route path="icon" element={<IconSandBox />} />
       </Route>
     </Routes>
   );

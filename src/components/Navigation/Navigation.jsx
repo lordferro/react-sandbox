@@ -19,6 +19,9 @@ const Navigation = () => (
         <li>
           <NavLink to="/button-group">Button Group</NavLink>
         </li>
+        <li>
+          <NavLink to="/icon">Icon</NavLink>
+        </li>
       </ul>
     </nav>
   </div>

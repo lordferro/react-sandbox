@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "./Button";
+import Button from "./Button";
 
 const ButtonSandbox = () => (
-  <div style={{ padding: 15 }}>
+  <>
     <h2>
       <span>1. Text and onClick function:</span>
     </h2>
@@ -70,7 +70,7 @@ const ButtonSandbox = () => (
     >
       Link
     </Button>
-  </div>
+  </>
 );
 
 export default ButtonSandbox;

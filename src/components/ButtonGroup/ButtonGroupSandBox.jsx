@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ButtonGroup from "./ButtonGroup";
-import { Button } from "../Button/Button";
+import Button from "../Button/Button";
 
-export const ButtonGroupSandbox = () => {
+const ButtonGroupSandbox = () => {
   const [switchOn, setSwitchOn] = useState(true);
 
   const handleSwitch = (e) => {
@@ -15,7 +15,7 @@ export const ButtonGroupSandbox = () => {
   };
 
   return (
-    <div style={{ padding: 15 }}>
+    <>
       <h2>
         <span>1. Horizontal button group:</span>
       </h2>
@@ -45,7 +45,7 @@ export const ButtonGroupSandbox = () => {
           OFF
         </Button>
       </ButtonGroup>
-    </div>
+    </>
   );
 };
 
