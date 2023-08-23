@@ -16,6 +16,7 @@ const BadgeSandbox = lazy(() => import("./components/Badge/Sandbox"));
 const ListGroupSandbox = lazy(() =>
   import("./components/ListGroup/Sandbox.jsx")
 );
+const InputSandbox = lazy(() => import("./components/Input/Sandbox"));
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="chip" element={<ChipSandbox />} />
         <Route path="badge" element={<BadgeSandbox />} />
         <Route path="list-group" element={<ListGroupSandbox />} />
+        <Route path="input" element={<InputSandbox />} />
       </Route>
     </Routes>
   );

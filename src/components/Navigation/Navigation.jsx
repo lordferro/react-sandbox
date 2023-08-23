@@ -34,6 +34,9 @@ const Navigation = () => (
         <li>
           <NavLink to="/list-group">List group</NavLink>
         </li>
+        <li>
+          <NavLink to="input">Input</NavLink>
+        </li>
       </ul>
     </nav>
   </div>
