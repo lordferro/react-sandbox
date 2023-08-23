@@ -5,6 +5,7 @@
 .navigation {
   min-width: 120px;
   max-width: 165px;
+  min-height: 100vh;
   background-color: #D43728;
   box-shadow: 1px 1px 10px #777;
 }

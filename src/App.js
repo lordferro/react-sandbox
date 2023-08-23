@@ -11,7 +11,11 @@ const ButtonGroupSandbox = lazy(() =>
 );
 const IconSandBox = lazy(() => import("./components/Icon/IconSandBox"));
 const ImageSandBox = lazy(() => import("./components/image/ImageSandbox"));
-const ChipSandbox = lazy(() => import("./components/chip/Sandbox"));
+const ChipSandbox = lazy(() => import("./components/Chip/Sandbox"));
+const BadgeSandbox = lazy(() => import("./components/Badge/Sandbox"));
+const ListGroupSandbox = lazy(() =>
+  import("./components/ListGroup/Sandbox.jsx")
+);
 
 function App() {
   return (
@@ -23,6 +27,8 @@ function App() {
         <Route path="icon" element={<IconSandBox />} />
         <Route path="image" element={<ImageSandBox />} />
         <Route path="chip" element={<ChipSandbox />} />
+        <Route path="badge" element={<BadgeSandbox />} />
+        <Route path="list-group" element={<ListGroupSandbox />} />
       </Route>
     </Routes>
   );
