@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { Component, Fragment } from "react";
+import React, { Component} from "react";
 import Chip from "./Chip";
 
 class Example extends Component {
@@ -41,7 +41,7 @@ class Example extends Component {
     const { people } = this.state;
 
     return (
-      <Fragment>
+      <>
         {people.map(({ name, active }) => (
           <Chip
             text={name}
@@ -54,7 +54,7 @@ class Example extends Component {
             onChipClick={this.toggleActiveChip}
           />
         ))}
-      </Fragment>
+      </>
     );
   }
 }

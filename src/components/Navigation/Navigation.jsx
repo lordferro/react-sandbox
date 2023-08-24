@@ -37,6 +37,9 @@ const Navigation = () => (
         <li>
           <NavLink to="input">Input</NavLink>
         </li>
+        <li>
+          <NavLink to="tab-bar">Tab bar</NavLink>
+        </li>
       </ul>
     </nav>
   </div>
