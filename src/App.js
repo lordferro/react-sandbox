@@ -17,7 +17,9 @@ const ListGroupSandbox = lazy(() =>
   import("./components/ListGroup/Sandbox.jsx")
 );
 const InputSandbox = lazy(() => import("./components/Input/Sandbox"));
-const TabBarSandbox = lazy(() => import("./components/TabBar/Sandbox"))
+const TabBarSandbox = lazy(() => import("./components/TabBar/Sandbox"));
+const TooltipSandbox = lazy(() => import("./components/Tooltip/Sandbox"));
+const ModalSandbox = lazy(() => import("./components/Modal/Sandbox"));
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route path="list-group" element={<ListGroupSandbox />} />
         <Route path="input" element={<InputSandbox />} />
         <Route path="tab-bar" element={<TabBarSandbox />} />
+        <Route path="tooltip" element={<TooltipSandbox />} />
+        <Route path="modal" element={<ModalSandbox />} />
       </Route>
     </Routes>
   );

@@ -40,6 +40,12 @@ const Navigation = () => (
         <li>
           <NavLink to="tab-bar">Tab bar</NavLink>
         </li>
+        <li>
+          <NavLink to="tooltip">Tooltip</NavLink>
+        </li>
+        <li>
+          <NavLink to="modal">Modal</NavLink>
+        </li>
       </ul>
     </nav>
   </div>

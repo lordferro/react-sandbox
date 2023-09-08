@@ -70,6 +70,10 @@ const ButtonSandbox = () => (
     >
       Link
     </Button>
+    <h2>
+      <span>5. Invert button (secondary button)</span>
+    </h2>
+    <Button invert />
   </>
 );
 

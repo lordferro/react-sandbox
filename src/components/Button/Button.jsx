@@ -9,9 +9,10 @@ const Button = ({
   className,
   disabled,
   active,
+  invert,
   ...attrs
 }) => {
-  const classes = classNames("btn", className, { active });
+  const classes = classNames("btn", className, { active }, {invert});
   const Tag = attrs.href ? "a" : "button";
   const onClickAction = (e) => {
     if (disabled) {
